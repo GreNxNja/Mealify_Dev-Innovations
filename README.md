@@ -163,7 +163,7 @@ npx expo start
 
 ## 🖼️ Screenshots
 
-*Add screenshots here before submission:*
+Check out assets\screenshots 
 
 * Home screen with search results
 * Recipe details screen
