@@ -1,50 +1,202 @@
-# Welcome to your Expo app 👋
+# Mealify – Recipe Finder App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Mealify is a React Native recipe search application built as part of the **React Native Developer Assignment** by **Dev Innovations Labs**.
+The app allows users to search meals, view detailed recipes, and save favorites locally with a clean and responsive UI.
 
-## Get started
+This project focuses on **real-world React Native fundamentals**: API integration, navigation, state handling, clean architecture, and UI polish.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📱 App Overview
 
-2. Start the app
+**Mealify** helps users:
 
-   ```bash
-   npx expo start
-   ```
+* Search meals by name
+* Browse recipes with images and categories
+* View full recipe details including ingredients and instructions
+* Save favorite recipes locally for later access
 
-In the output, you'll find options to open the app in a
+The app uses **TheMealDB public API** and stores favorites using **AsyncStorage**.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## ✅ Assignment Requirements Fulfilled
 
-## Get a fresh project
+### Core Features (Required)
 
-When you're ready, run:
+* ✅ Search for meals using an external API
+* ✅ Display recipe cards (image, name, category)
+* ✅ Recipe details screen
+* ✅ Loading and error handling
 
-```bash
-npm run reset-project
+### Bonus Features Implemented
+
+* ✅ Save favorites locally (AsyncStorage)
+* ✅ Favorites screen
+* ✅ Smooth navigation transitions
+* ✅ Clean UI with custom theme
+* ✅ Icon-based favorite button (Lucide icons)
+* ✅ Empty state handling
+
+> Optional feature **Theme Toggle (Light/Dark)** was intentionally skipped to prioritize stability and code clarity within the given time constraint.
+
+---
+
+## 🧱 Tech Stack
+
+* **React Native (Expo)**
+* **React Navigation** – Native Stack Navigator
+* **AsyncStorage** – Local persistence
+* **Lucide React Native** – Icon system
+* **TheMealDB API** – Recipe data source
+* **Inter Font** – Clean, modern typography
+
+---
+
+## 🗂️ Project Structure
+
+```
+MealifyExpo/
+├── src/
+│   ├── components/
+│   │   ├── MealCard.js
+│   │   ├── SearchBar.js
+│   │   ├── LoadingSpinner.js
+│   │   └── ErrorMessage.js
+│   ├── screens/
+│   │   ├── HomeScreen.js
+│   │   ├── DetailsScreen.js
+│   │   └── FavoritesScreen.js
+│   ├── navigation/
+│   │   └── AppNavigator.js
+│   ├── services/
+│   │   └── api.js
+│   ├── utils/
+│   │   └── storage.js
+│   └── theme/
+│       └── colors.js
+├── App.js
+├── package.json
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This structure keeps **UI, logic, navigation, and services clearly separated**, making the codebase scalable and easy to maintain.
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🔌 API Used
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+**TheMealDB API**
+Base URL:
 
-## Join the community
+```
+https://www.themealdb.com/api/json/v1/1
+```
 
-Join our community of developers creating universal apps.
+Endpoints:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* Search meals: `/search.php?s={query}`
+* Meal details: `/lookup.php?i={mealId}`
+
+---
+
+## ⚙️ Setup Instructions
+
+### Prerequisites
+
+* Node.js (v14 or higher)
+* npm or yarn
+* Expo CLI (optional but recommended)
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/GreNxNja/Mealify_Dev-Innovations
+cd Mealify_Dev-Innovations
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Start the app
+
+```bash
+npx expo start
+```
+
+4. Run on:
+
+* **Web**: press `w`
+* **Android Emulator**: press `a`
+* **Physical Device**: scan QR using Expo Go
+
+---
+
+## 🧪 App Usage
+
+1. **Search Meals**
+
+   * Enter a meal name (e.g., `chicken`, `pasta`)
+   * Press search / enter
+
+2. **View Recipe Details**
+
+   * Tap any recipe card
+   * View ingredients, instructions, category, and region
+
+3. **Save Favorites**
+
+   * Tap the heart icon on the details screen
+   * Icon fills when saved
+
+4. **View Favorites**
+
+   * Tap the heart icon in the header
+   * Access saved meals even after app restart
+
+---
+
+## 🖼️ Screenshots
+
+*Add screenshots here before submission:*
+
+* Home screen with search results
+* Recipe details screen
+* Favorites screen
+
+---
+
+## 📈 Evaluation Criteria Mapping
+
+| Criteria          | Status                          |
+| ----------------- | ------------------------------- |
+| Code Quality      | ✅ Modular, reusable components  |
+| UI Design         | ✅ Clean, consistent, responsive |
+| State Management  | ✅ Local state + AsyncStorage    |
+| API Integration   | ✅ Async handling + error states |
+| Project Structure | ✅ Organized and readable        |
+| Bonus Features    | ✅ Favorites + transitions       |
+
+---
+
+## 📝 Notes
+
+* Expo Router was intentionally disabled to use **explicit React Navigation**, matching assignment expectations.
+* Icons were implemented using **Lucide** instead of emoji for a professional UI.
+* Typography uses **Inter** for clarity and consistency.
+* Code prioritizes **readability and maintainability** over over-engineering.
+
+---
+
+## 🚀 Submission
+
+* Public GitHub Repository: https://github.com/GreNxNja/Mealify_Dev-Innovations
+* Google Form Submitted: ✅
+* Assignment Completed Within Time Limit: ✅
+
+
