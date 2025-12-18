@@ -262,23 +262,23 @@ GET /lookup.php?i={mealId}
 ## 📸 Screenshots
 
 ### Home Screen - Search Interface
-![Home Screen](assets/screenshots/Screenshot 2025-12-17 190943.png)
+![Home Screen](assets/screenshots/home.png)
 *Clean search interface with intuitive design*
 
 ### Search Results
-![Search Results](assets/screenshots/Screenshot 2025-12-17 190956.png)
+![Search Results](assets/screenshots/search.png)
 *Grid of recipe cards with images and categories*
 
 ### Recipe Details
-![Recipe Details](assets/screenshots/Screenshot 2025-12-17 191008.png)
+![Recipe Details](assets/screenshots/recipe.png)
 *Comprehensive recipe information with ingredients and instructions*
 
 ### Favorites Screen
-![Favorites](assets/screenshots/Screenshot 2025-12-17 191029.png)
+![Favorites](assets/screenshots/favorites.png)
 *All saved recipes in one place*
 
 ### Empty Favorites State
-![Empty State](assets/screenshots/Screenshot 2025-12-17 191039.png)
+![Empty State](assets/screenshots/myfavorites.png)
 *Friendly empty state encouraging users to add favorites*
 
 ---
