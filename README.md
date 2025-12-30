@@ -417,9 +417,9 @@ If you have any questions or need help with setup:
 
 **Time Taken**: 2 days
 
-**Lines of Code**: ~1000+
+**Lines of Code**: ~350+
 
-**Components Created**: 9
+**Components Created**: 5
 
 **Screens**: 3
 
