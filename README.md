@@ -376,9 +376,9 @@ Potential features for future versions:
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- GitHub: [@GreNxNja](https://github.com/GreNxNja)
+- Email: dev.prith@proton.me
+- LinkedIn: [Prithwijit Ghosh](https://www.linkedin.com/in/greninja/)
 
 ---
 
